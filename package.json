@@ -2,7 +2,11 @@
   "name": "express-template",
   "displayName": "Express Template",
   "description": "Uma extensão para criar estrutura de projeto Express.js",
+  "publisher": "express-template",
   "version": "0.0.1",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jonatasperaza/template-express"},
   "engines": {
     "vscode": "^1.56.0"
   },

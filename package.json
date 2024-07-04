@@ -4,28 +4,30 @@
   "description": "Uma extensão para criar estrutura de projeto Express.js",
   "version": "0.0.1",
   "engines": {
-      "vscode": "^1.56.0"
+    "vscode": "^1.56.0"
   },
   "activationEvents": [
-      "onCommand:extension.createExpressTemplate"
+    "onCommand:extension.createExpressTemplate"
   ],
   "main": "./src/extension.js",
   "contributes": {
-      "commands": [
-          {
-              "command": "extension.createExpressTemplate",
-              "title": "Criar Template Express"
-          }
-      ]
+    "commands": [
+      {
+        "command": "extension.createExpressTemplate",
+        "title": "Create Express Template"
+      }
+    ]
   },
   "scripts": {
-      "vscode:prepublish": "npm run compile",
-      "compile": "tsc -p ./"
+    "vscode:prepublish": "npm run compile",
+    "compile": "babel src -d out"
   },
   "devDependencies": {
-      "typescript": "^4.0.0",
-      "vscode": "^1.1.37",
-      "@types/node": "^14.0.0",
-      "@types/vscode": "^1.56.0"
+    "@babel/cli": "^7.24.7",
+    "@babel/core": "^7.24.7",
+    "@babel/preset-env": "^7.24.7",
+    "@types/node": "^14.0.0",
+    "@types/vscode": "^1.56.0",
+    "vscode": "^1.1.34"
   }
 }

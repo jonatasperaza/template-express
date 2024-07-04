@@ -1,65 +1,43 @@
-# template-express README
+# Express Template Extension
 
-This is the README for your extension "template-express". After writing up a brief description, we recommend including the following sections.
+Esta extensão do Visual Studio Code cria uma estrutura de projeto Express.js completa com a configuração básica e dependências necessárias.
 
-## Features
+## Recursos
 
-Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
+- Criação automática de estrutura de pastas:
+  - `src/`
+  - `src/controllers/`
+  - `src/models/`
+  - `src/routes/`
+  - `src/views/`
+- Arquivos padrão:
+  - `src/app.js` - Configuração principal do Express.
+  - `src/routes/index.js` - Rotas básicas.
+  - `src/models/exampleModel.js` - Modelo de exemplo.
+  - `src/controllers/exampleController.js` - Controlador de exemplo.
+  - `src/views/index.html` - Página HTML de exemplo.
+  - `package.json` - Arquivo de configuração do NPM com dependências.
 
-For example if there is an image subfolder under your extension project workspace:
+## Dependências
 
-\!\[feature X\]\(images/feature-x.png\)
+A extensão configura o `package.json` com as seguintes dependências:
 
-> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
+- `express`
+- `dotenv`
+- `pg` (PostgreSQL)
+- `cors`
+- `body-parser`
 
-## Requirements
+## Instalação
 
-If you have any requirements or dependencies, add a section describing those and how to install and configure them.
+1. Certifique-se de ter o [Node.js](https://nodejs.org/) instalado.
+2. Instale o Visual Studio Code a partir de [code.visualstudio.com](https://code.visualstudio.com/).
+3. Instale a extensão do VS Code para Express Template.
 
-## Extension Settings
+## Uso
 
-Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
-
-For example:
-
-This extension contributes the following settings:
-
-* `myExtension.enable`: Enable/disable this extension.
-* `myExtension.thing`: Set to `blah` to do something.
-
-## Known Issues
-
-Calling out known issues can help limit users opening duplicate issues against your extension.
-
-## Release Notes
-
-Users appreciate release notes as you update your extension.
-
-### 1.0.0
-
-Initial release of ...
-
-### 1.0.1
-
-Fixed issue #.
-
-### 1.1.0
-
-Added features X, Y, and Z.
-
----
-
-## Working with Markdown
-
-You can author your README using Visual Studio Code.  Here are some useful editor keyboard shortcuts:
-
-* Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux)
-* Toggle preview (`Shift+Cmd+V` on macOS or `Shift+Ctrl+V` on Windows and Linux)
-* Press `Ctrl+Space` (Windows, Linux, macOS) to see a list of Markdown snippets
-
-## For more information
-
-* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
-
-**Enjoy!**
+1. Abra o Visual Studio Code.
+2. Abra uma pasta onde você deseja criar o novo projeto Express.js.
+3. Abra a Command Palette (Ctrl+Shift+P).
+4. Execute o comando `Create Express Template`.
+5. A estrutura do projeto será criada automaticamente na pasta aberta.

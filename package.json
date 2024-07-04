@@ -1,34 +1,31 @@
 {
-  "name": "template-express",
-  "displayName": "template-express",
-  "description": "a fastest creator template for nodjs with express",
+  "name": "express-template",
+  "displayName": "Express Template",
+  "description": "Uma extensão para criar estrutura de projeto Express.js",
   "version": "0.0.1",
   "engines": {
-    "vscode": "^1.91.0"
+      "vscode": "^1.56.0"
   },
-  "categories": [
-    "Other"
+  "activationEvents": [
+      "onCommand:extension.createExpressTemplate"
   ],
-  "activationEvents": [],
-  "main": "./extension.js",
+  "main": "./src/extension.js",
   "contributes": {
-    "commands": [{
-      "command": "template-express.helloWorld",
-      "title": "Hello World"
-    }]
+      "commands": [
+          {
+              "command": "extension.createExpressTemplate",
+              "title": "Criar Template Express"
+          }
+      ]
   },
   "scripts": {
-    "lint": "eslint .",
-    "pretest": "npm run lint",
-    "test": "vscode-test"
+      "vscode:prepublish": "npm run compile",
+      "compile": "tsc -p ./"
   },
   "devDependencies": {
-    "@types/vscode": "^1.91.0",
-    "@types/mocha": "^10.0.7",
-    "@types/node": "20.x",
-    "eslint": "^8.57.0",
-    "typescript": "^5.4.5",
-    "@vscode/test-cli": "^0.0.9",
-    "@vscode/test-electron": "^2.4.0"
+      "typescript": "^4.0.0",
+      "vscode": "^1.1.37",
+      "@types/node": "^14.0.0",
+      "@types/vscode": "^1.56.0"
   }
 }

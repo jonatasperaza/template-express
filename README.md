@@ -1,5 +1,49 @@
 # Express Template Extension
+# En-Us
 
+This Visual Studio Code extension creates a complete Express.js project structure with the basic configuration and required dependencies.
+
+## Resources
+
+- Automatic creation of folder structure:
+  - `src/`
+  - `src/controllers/`
+  - `src/models/`
+  - `src/routes/`
+  - `src/views/`
+- Standard files:
+  - `src/app.js` - Main Express configuration.
+  - `src/routes/index.js` - Basic routes.
+  - `src/models/exampleModel.js` - Example model.
+  - `src/controllers/exampleController.js` - Example controller.
+  - `src/views/index.html` - Example HTML page.
+  - `package.json` - NPM configuration file with dependencies.
+
+## Dependencies
+
+The extension configures `package.json` with the following dependencies:
+
+- `express`
+- `dotenv`
+- `pg` (PostgreSQL)
+- `cors`
+- `body-parser`
+
+## Installation
+
+1. Make sure you have [Node.js](https://nodejs.org/) installed.
+2. Install Visual Studio Code from [code.visualstudio.com](https://code.visualstudio.com/).
+3. Install the VS Code extension for Express Template.
+
+## Usage
+
+1. Open Visual Studio Code.
+2. Open a folder where you want to create the new Express.js project.
+3. Open the Command Palette (Ctrl+Shift+P).
+4. Run the `Create Express Template` command.
+5. The project structure will be automatically created in the opened folder.
+
+# Pt-Br
 Esta extensão do Visual Studio Code cria uma estrutura de projeto Express.js completa com a configuração básica e dependências necessárias.
 
 ## Recursos
